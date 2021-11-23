@@ -1,0 +1,147 @@
+@media only screen and (max-width:576px){
+
+    .sm-none{
+        display: none;
+    }
+body::-webkit-scrollbar{
+    display: none;
+}
+}
+:root{
+    --red: #e30f19;
+    --red-h: #ff0000;
+    --white: #fff;
+    --dark: #1b1b1b;
+    --gray-100: #999898;
+    --gray-200: #4d4d4d;
+}
+.gray-100{
+    color: var(--gray-100);
+}
+body{
+    background: linear-gradient(to top, rgba(0,0,0,.9), rgba(0,0,0,.9));
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 6px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--gray-200);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--dark);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--dark);  /* creates padding around scroll thumb */
+  }
+nav{
+    position: fixed;
+    z-index: 1;
+}
+
+.logo{
+    width: 100px;
+}
+ nav input{
+     border: none;
+
+ }
+ .avatar{
+     width: 50px;
+     border-radius: 5px;
+     box-shadow: 0 0 5px 0px #000;
+ }
+
+ header{
+     background-image:linear-gradient(to right, rgba(0, 0, 0, 2), rgba(0,0,0, 0)),
+      url(../img/full-banner.jpg);
+    
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 65vh;
+    width: 100vw;;
+ }
+
+.txt-white{
+     color: var(--white);
+ }
+
+ .bt-netflix{
+     text-decoration:  none;
+     background: var(--red);
+     color: var(--white);
+     text-transform: uppercase;
+     font-weight: 700;
+     font-size: 20px;
+     border-radius: 10px;
+ }
+
+ .bt-netflix:hover{
+     color: var(--white);
+     transition: all .3s ease;
+     background: var(--red-h);
+ }
+ .items-wrapper{
+     width: 100vw;
+ }
+ .items{
+     position: relative;
+     display: flex;
+     overflow-x: auto;
+     scroll-snap-type: x mandatory;
+     -webkit-overflow-scrolling: touch;
+     scroll-behavior: smooth;
+
+ }
+ .items::-webkit-scrollbar {
+    display: none;             /* width of the entire scrollbar */
+  }
+  
+  .items::-webkit-scrollbar-track {
+    background: var(--gray-200);        /* color of the tracking area */
+  }
+  
+  .items::-webkit-scrollbar-thumb {
+    background-color: var(--dark);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--dark);  /* creates padding around scroll thumb */
+  }
+ 
+.item{
+    flex:none;
+    scroll-snap-align: start;
+    pointer-events: none;
+
+}
+ .radius{
+     border-radius: 10px;
+ }
+ .img-card{
+     position: relative;
+    display: flex;
+    flex-direction: column;
+     width: 300px;
+    border-radius: 25px;
+    margin: 5px;
+    cursor: pointer;
+ }
+
+ .switch{
+    height: 150px;
+    opacity: 0;
+    
+
+ }
+ .switch:hover{
+    opacity: 1;
+}
+ .img-card:hover{
+     transition: all .3s ease;
+    transform: scale(1.05);
+    margin: 0 2%;
+ }
+
+.a-footer{
+    color:var(--gray-100)
+}
